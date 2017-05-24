@@ -1,0 +1,102 @@
+/* GENERAL LAYOUT */
+
+body,html{
+  max-height: 100%;
+  max-width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	font-family: 'Raleway', sans-serif;
+	background-color: #ffff80; //yellow
+	background-size: cover;
+/*   background: #555 url("http://res.cloudinary.com/duyocqv0t/image/upload/v1492512592/yellowstone-1589613_i5pmk9.jpg")   no-repeat center center; */
+  background: #555 url("img/animals-sky.jpg")   no-repeat center center;
+}
+
+/* COMPONENTS LAYOUT */
+
+.wrapper{
+ 	max-width: 100%;
+  max-height: 95%;
+  min-width: 40%;
+	border: solid 1px;
+	border-radius: 20px;
+	background: grey;
+	opacity: .8;
+	color: white;
+	box-shadow: -6px -6px 6px #000;
+  overflow: auto;
+  padding
+}
+
+.title{
+	background: black;
+	color: white;
+	margin:0 auto;
+  padding: 10px;
+	text-align: center;
+	border: solid 1px;
+	border-radius: 20px 20px 0 0;
+}
+
+h1{
+  font-size: 28px;
+}
+
+.content{
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	font-size: 24px;
+	padding: 30px 10px;
+}
+
+.temp-wrapper{
+  display: flex;
+  align-items: center;
+}
+.temp-info{
+  text-align: center;
+  margin-left:10px;
+}
+
+.temp-button{
+  display: flex;
+}
+
+#icon{
+  margin-top: 20px;
+}
+
+#temperature{
+  margin-top: 20px;
+}
+
+#convert{
+  font-size: 24px;
+  width: 80px;
+}
+
+#convert:hover{
+	color: red;
+}
+
+/* RESPONSIVE LAYOUT */
+@media screen and (max-height: 560px){
+  .wrapper{
+     height: 100%;
+    font-size: 16px;
+  }
+  h1{
+    font-size: 24px;
+  }
+  #icon{
+    width: 64px;
+    height: 64px;
+  }
+}
